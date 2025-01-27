@@ -44,7 +44,7 @@ def main():
             # If file ext matches decrypt the file.
             if file_extension == ".ext goes here":
                 decrypted_filename= f"decrypted-{filename}"
-                filename = f"{filename}.{file_extension}"
+                filename = f"{filename}{file_extension}"
                 print(f"Decrypting: {filename}")
                 xor_decrypt(filename, decrypted_filename, key)
                 print(f"Saved as: {decrypted_filename}")
